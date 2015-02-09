@@ -5,12 +5,11 @@
 </head>
 <body>
   <h1>Pick Your Line</h1>
-    <ul>
-    <li>Red Line</li>
-    <li>Green Line</li>
-    <li>Orange Line</li>
-    <li>Blue Line</li>
-    </ul>
+  <ul>
+    <% @lines.each do |line| %>
+      <li><%= line %></li>
+      <% end %>
+  </ul>
 
 </body>
 </html>
