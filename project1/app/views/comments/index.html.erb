@@ -1,6 +1,29 @@
 <!DOCTYPE html>
+<html>
+<head>
+<title>Comments</title>
+</head>
+
+<body>
 
 <h1>All Comments</h1>
+<p>Make sure to include the line color in your title!</p>
+
+<%= form_for :comment,  url: comments_path do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+  <% end %>
 
 <table>
   <tr>
@@ -17,3 +40,9 @@
 
   <% end %>
 </table>
+
+<%= link_to 'Home', controller: 'welcome' %>
+
+</body>
+
+</html>
