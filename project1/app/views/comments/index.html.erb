@@ -2,6 +2,37 @@
 <html>
 <head>
 <title>Comments</title>
+<style>
+  body { background-color: #1F3D4C;
+      background-image: url("http://upload.wikimedia.org/wikipedia/commons/thumb/6/64/MBTA.svg/500px-MBTA.svg.png");
+      background-repeat: no-repeat;
+      background-position: right top}
+
+  h1   {color:black}
+  p    {color:black}
+
+    a:link {
+    color:#000000;
+    background-color:transparent;
+    text-decoration:underline;
+}
+a:visited {
+    color:#000000;
+    background-color:transparent;
+    text-decoration:underline;
+}
+a:hover {
+    color:#ff0000;
+    background-color:transparent;
+    text-decoration:underline;
+}
+a:active {
+    color:#ff0000;
+    background-color:transparent;
+    text-decoration:underline;
+}
+
+  </style>
 </head>
 
 <body>
@@ -40,6 +71,8 @@
 
   <% end %>
 </table>
+
+<br>
 
 <%= link_to 'Home', controller: 'welcome' %>
 
